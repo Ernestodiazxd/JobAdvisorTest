@@ -1,38 +1,39 @@
 package JATest;
 
 
+import java.util.List;
+
 public class Empresa {
-    private Integer id;
+    private Integer idEmpresa;
 
-    private String nom;  //*
-    private String adreca; //*
-    private String poblacio; //*
-    private String societat; //(SRL, SA, COOP, SLAB)
+    private String nomEmpresa;
+    private String adreca;
+    private String poblacio;
+    private String societat;
+    private String sector;
+    private Long Ntreballadors;
 
-    //poner simplemente String sector y en el momento d hacerlo se comprueba si el string existe en la tabla y tal...
-    private String sector; //(desplegable) llocs de feina *
 
-    private Integer num_treballadors;
-
+    private List<Lloc> llocList;
 
     public Empresa() {
+
     }
 
-    //Getters i Setters
-    public Integer getId() {
-        return id;
+    public Integer getIdEmpresa() {
+        return idEmpresa;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public void setIdEmpresa(Integer idEmpresa) {
+        this.idEmpresa = idEmpresa;
     }
 
-    public String getNom() {
-        return nom;
+    public String getNomEmpresa() {
+        return nomEmpresa;
     }
 
-    public void setNom(String nom) {
-        this.nom = nom;
+    public void setNomEmpresa(String nomEmpresa) {
+        this.nomEmpresa = nomEmpresa;
     }
 
     public String getAdreca() {
@@ -51,14 +52,6 @@ public class Empresa {
         this.poblacio = poblacio;
     }
 
-    public Integer getNum_treballadors() {
-        return num_treballadors;
-    }
-
-    public void setNum_treballadors(Integer num_treballadors) {
-        this.num_treballadors = num_treballadors;
-    }
-
     public String getSocietat() {
         return societat;
     }
@@ -73,6 +66,22 @@ public class Empresa {
 
     public void setSector(String sector) {
         this.sector = sector;
+    }
+
+    public Long getNtreballadors() {
+        return Ntreballadors;
+    }
+
+    public void setNtreballadors(Long ntreballadors) {
+        Ntreballadors = ntreballadors;
+    }
+
+    public List<Lloc> getLlocList() {
+        return llocList;
+    }
+
+    public void setLlocList(List<Lloc> llocList) {
+        this.llocList = llocList;
     }
 
 }
